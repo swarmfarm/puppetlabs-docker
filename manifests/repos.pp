@@ -29,7 +29,7 @@ class docker::repos (
           release      => $release,
           repos        => $package_repos,
           key          => {
-            id     => $package_key,
+            name   => 'docker.gpg',
             source => $key_source,
           },
           include      => {
